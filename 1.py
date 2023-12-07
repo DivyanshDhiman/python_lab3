@@ -19,7 +19,7 @@ if x == 1:
         break
     
     while(i<=a):
-        b=input("Which product do you want to buy?")
+        b=input("Please write the name and the brand name of the product that you want to buy")
         c=int(input("Write the price of this product in dollars."))
         i=i+1
         shoppingCart.update({b:c})
@@ -28,7 +28,7 @@ if x == 1:
 if x == 6:
     print("ok")
 
-
+print(" Type 1 to Add a product to the cart.")   
 print(" Type 2 to Search for a product.")   
 print(" Type 3 to Delete a product from the cart.")   
 print(" Type 4 to Display the contents of the cart.")   
@@ -53,6 +53,8 @@ if y==2:
             
             
             
+print(" Type 1 to Add a product to the cart.")   
+print(" Type 2 to Search for a product.")   
 print(" Type 3 to Delete a product from the cart.")   
 print(" Type 4 to Display the contents of the cart.")   
 print(" Type 5 to Purchase items.")   
@@ -73,9 +75,57 @@ if z==3:
             shoppingCart.pop(g)
             print(shoppingCart)
 
-print(shoppingCart)
-if shoppingCart=={}:
-    print("Shopping cart is empty.")
+print(" Type 1 to Add a product to the cart.")   
+print(" Type 2 to Search for a product.")   
+print(" Type 3 to Delete a product from the cart.")   
+print(" Type 4 to Display the contents of the cart.")   
+print(" Type 5 to Purchase items.")   
+print(" Type 6 to Quit")
+
+m=int(input("What do you want to do?"))
+if (m==4):
+    print(shoppingCart)
+    if shoppingCart=={}:
+        print("Shopping cart is empty.")
+
+print(" Type 1 to Add a product to the cart.")   
+print(" Type 2 to Search for a product.")   
+print(" Type 3 to Delete a product from the cart.")   
+print(" Type 4 to Display the contents of the cart.")   
+print(" Type 5 to Purchase items.")   
+print(" Type 6 to Quit") 
+
+o=int(input("What do you want to do?"))
+if o==5:
+    n=input("Complete purchase(Y/N)?")
+    if(n=="y" or n=="Y"):
+        print("Thank you for your business")
+        shoppingCart.clear()
+        print(shoppingCart)
+    elif(n=="n" or n=="N"):
+        print("Please continue shopping.")
+    else:
+        print("Please answer either Y or N")
+
+print(" Type 1 to Add a product to the cart.")   
+print(" Type 2 to Search for a product.")   
+print(" Type 3 to Delete a product from the cart.")   
+print(" Type 4 to Display the contents of the cart.")   
+print(" Type 5 to Purchase items.")   
+print(" Type 6 to Quit") 
+
+v=int(input("What do you want to do?"))
+if(v==6):
+    print("Good bye!!")
+
+
+
+  
+
+
+
+
+
 
 
 
